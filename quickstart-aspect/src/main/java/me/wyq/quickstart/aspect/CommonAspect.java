@@ -18,6 +18,7 @@ public class CommonAspect {
         Object result = point.proceed();
         String signature = point.getSignature().toString();
         System.out.println("handle result: " + result);
+        // 验证signature是什么样的
         System.out.println("signature: " + signature);
         return result;
     }
